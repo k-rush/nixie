@@ -18560,6 +18560,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="Y2" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="PTH-2X6" value="32.768kHz"/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18780,6 +18782,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <attribute name="NAME" x="165.1" y="291.592" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="165.1" y="287.528" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="SW1" gate="G$3" x="205.74" y="187.96" smashed="yes" rot="R180" grouprefs="ENCODER"/>
+<instance part="SW1" gate="G$4" x="205.74" y="195.58" smashed="yes" rot="R180" grouprefs="ENCODER"/>
+<instance part="GND16" gate="1" x="205.74" y="185.42" smashed="yes" grouprefs="ENCODER">
+<attribute name="VALUE" x="203.2" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="205.74" y="193.04" smashed="yes" grouprefs="ENCODER">
+<attribute name="VALUE" x="203.2" y="190.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18881,6 +18891,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="C5" gate="G$1" pin="-"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="190.5" y1="269.24" x2="198.12" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="SW1" gate="G$4" pin="G"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="SW1" gate="G$3" pin="G"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -19201,6 +19219,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,182.88,246.38,IC1,VBAT,N$1,,,"/>
+<approved hash="113,1,173.01,139.742,SV1,,,,,"/>
+<approved hash="113,1,245.405,48.26,S1,,,,,"/>
+<approved hash="113,1,44.9936,177.8,Q1,,,,,"/>
+<approved hash="113,1,73.9496,256.582,FTDI,,,,,"/>
+<approved hash="113,1,283.5,83.8623,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -18527,8 +18527,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <instance part="GND3" gate="1" x="254" y="33.02" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="251.46" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="P+4" gate="1" x="248.92" y="76.2" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="246.38" y="71.12" size="1.778" layer="96" rot="R90"/>
+<instance part="P+4" gate="1" x="241.3" y="60.96" smashed="yes" grouprefs="POWER">
+<attribute name="VALUE" x="238.76" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+5" gate="1" x="269.24" y="50.8" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="266.7" y="45.72" size="1.778" layer="96" rot="R90"/>
@@ -18743,19 +18743,24 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="254" y1="53.34" x2="254" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="COM"/>
 <wire x1="254" y1="38.1" x2="254" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="48.26" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="53.34" x2="254" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="53.34" x2="248.92" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="5"/>
+<wire x1="248.92" y1="53.34" x2="254" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="48.26" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="53.34" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
-<junction x="243.84" y="53.34"/>
 <pinref part="S2" gate="G$1" pin="4"/>
 <wire x1="246.38" y1="25.4" x2="261.62" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="25.4" x2="261.62" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="38.1" x2="254" y2="38.1" width="0.1524" layer="91"/>
 <junction x="254" y="38.1"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="254" y1="60.96" x2="248.92" y2="60.96" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="248.92" y1="60.96" x2="248.92" y2="58.42" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="254" y1="58.42" x2="248.92" y2="58.42" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="248.92" y1="58.42" x2="248.92" y2="53.34" width="0.1524" layer="91"/>
+<junction x="248.92" y="58.42"/>
+<junction x="248.92" y="53.34"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -18893,17 +18898,16 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="C1" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="P+4" gate="1" pin="+12V"/>
-<wire x1="248.92" y1="73.66" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="63.5" x2="254" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+17" gate="1" pin="+12V"/>
 <wire x1="279.4" y1="71.12" x2="279.4" y2="76.2" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="279.4" y1="76.2" x2="281.94" y2="76.2" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="76.2" x2="281.94" y2="81.28" width="0.1524" layer="91" grouprefs="POWER"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="NC"/>
+<pinref part="P+4" gate="1" pin="+12V"/>
+<wire x1="241.3" y1="48.26" x2="241.3" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -19028,20 +19032,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <junction x="172.72" y="147.32"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="254" y1="60.96" x2="248.92" y2="60.96" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="248.92" y1="60.96" x2="248.92" y2="58.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="254" y1="58.42" x2="248.92" y2="58.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="248.92" y1="58.42" x2="248.92" y2="55.88" width="0.1524" layer="91"/>
-<junction x="248.92" y="58.42"/>
-<pinref part="S2" gate="G$1" pin="NC"/>
-<wire x1="241.3" y1="48.26" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="55.88" x2="248.92" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PC6(/RESET)"/>
@@ -19119,14 +19109,21 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="144.78" y1="99.06" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="254" y1="63.5" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="COM"/>
+<wire x1="243.84" y1="63.5" x2="243.84" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,182.88,246.38,IC1,VBAT,N$1,,,"/>
-<approved hash="113,1,173.01,139.742,SV1,,,,,"/>
-<approved hash="113,1,245.405,48.26,S1,,,,,"/>
-<approved hash="113,1,44.9936,177.8,Q1,,,,,"/>
+<approved hash="103,1,241.3,48.26,S2,NC,+12V,,,"/>
+<approved hash="113,1,167.93,109.262,SV1,,,,,"/>
 <approved hash="113,1,73.9496,256.582,FTDI,,,,,"/>
 <approved hash="113,1,283.5,83.8623,SV2,,,,,"/>
 </errors>

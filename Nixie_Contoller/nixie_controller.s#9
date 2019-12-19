@@ -18361,8 +18361,8 @@ W = angled&lt;p&gt;
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18577,11 +18577,11 @@ W = angled&lt;p&gt;
 <instance part="P+17" gate="1" x="279.4" y="68.58" smashed="yes" rot="R180" grouprefs="POWER">
 <attribute name="VALUE" x="281.94" y="73.66" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+18" gate="VCC" x="274.32" y="68.58" smashed="yes" rot="R180" grouprefs="POWER">
-<attribute name="VALUE" x="276.86" y="71.12" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="GND15" gate="1" x="198.12" y="266.7" smashed="yes">
 <attribute name="VALUE" x="195.58" y="264.16" size="1.778" layer="96"/>
+</instance>
+<instance part="P+18" gate="1" x="274.32" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="276.86" y="71.12" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -18753,13 +18753,6 @@ W = angled&lt;p&gt;
 <pinref part="P+16" gate="VCC" pin="VCC"/>
 <wire x1="76.2" y1="248.92" x2="76.2" y2="246.38" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="SV2" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="81.28" x2="279.4" y2="78.74" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="279.4" y1="78.74" x2="274.32" y2="78.74" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="P+18" gate="VCC" pin="VCC"/>
-<wire x1="274.32" y1="78.74" x2="274.32" y2="71.12" width="0.1524" layer="91" grouprefs="POWER"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -18806,6 +18799,13 @@ W = angled&lt;p&gt;
 <pinref part="P+10" gate="1" pin="V+"/>
 <wire x1="175.26" y1="137.16" x2="175.26" y2="132.08" width="0.1524" layer="91" grouprefs="DISPLAY_CONNECTION"/>
 <wire x1="175.26" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91" grouprefs="DISPLAY_CONNECTION"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="81.28" x2="279.4" y2="78.74" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="279.4" y1="78.74" x2="274.32" y2="78.74" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="274.32" y1="78.74" x2="274.32" y2="71.12" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="P+18" gate="1" pin="V+"/>
 </segment>
 </net>
 <net name="CLK" class="0">

@@ -19219,6 +19219,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,182.88,246.38,IC1,VBAT,N$1,,,"/>
+<approved hash="113,1,173.01,139.742,SV1,,,,,"/>
+<approved hash="113,1,245.405,48.26,S1,,,,,"/>
+<approved hash="113,1,44.9936,177.8,Q1,,,,,"/>
+<approved hash="113,1,73.9496,256.582,FTDI,,,,,"/>
+<approved hash="113,1,283.5,83.8623,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

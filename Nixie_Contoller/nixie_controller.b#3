@@ -191,7 +191,6 @@
 <circle x="0" y="-72.0852" radius="0.635" width="0" layer="47"/>
 <circle x="61.3156" y="-62.23" radius="0.635" width="0" layer="47"/>
 <circle x="-9.8806" y="-62.23" radius="0.635" width="0" layer="47"/>
-<text x="71.32" y="7.93" size="1.778" layer="21" rot="R270">HV+</text>
 <text x="-0.0254" y="-82.55" size="1.778" layer="47" rot="R90">0.001</text>
 <text x="51.4604" y="-82.55" size="1.778" layer="47" rot="R90">2.026</text>
 <text x="3.7084" y="-7.493" size="1.778" layer="47" rot="R90">0.146</text>
@@ -209,10 +208,14 @@
 <text x="-20.3454" y="-62.23" size="1.778" layer="47">0.000</text>
 <text x="-20.3454" y="-62.23" size="1.778" layer="47">0.000</text>
 <polygon width="0.762" layer="29">
-<vertex x="3.81" y="45.72"/>
 <vertex x="13.97" y="45.72"/>
-<vertex x="13.97" y="29.21"/>
+<vertex x="13.97" y="34.29"/>
+<vertex x="12.7" y="34.29"/>
+<vertex x="12.7" y="29.21"/>
 <vertex x="3.81" y="29.21"/>
+<vertex x="3.81" y="35.56"/>
+<vertex x="3.81" y="43.18"/>
+<vertex x="6.35" y="45.72"/>
 </polygon>
 </plain>
 <libraries>

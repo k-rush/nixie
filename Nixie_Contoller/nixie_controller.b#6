@@ -191,7 +191,6 @@
 <circle x="0" y="-72.0852" radius="0.635" width="0" layer="47"/>
 <circle x="61.3156" y="-62.23" radius="0.635" width="0" layer="47"/>
 <circle x="-9.8806" y="-62.23" radius="0.635" width="0" layer="47"/>
-<text x="71.32" y="7.93" size="1.778" layer="21" rot="R270">HV+</text>
 <text x="-0.0254" y="-82.55" size="1.778" layer="47" rot="R90">0.001</text>
 <text x="51.4604" y="-82.55" size="1.778" layer="47" rot="R90">2.026</text>
 <text x="3.7084" y="-7.493" size="1.778" layer="47" rot="R90">0.146</text>
@@ -208,6 +207,16 @@
 <text x="64.1604" y="-62.23" size="1.778" layer="47">0.000</text>
 <text x="-20.3454" y="-62.23" size="1.778" layer="47">0.000</text>
 <text x="-20.3454" y="-62.23" size="1.778" layer="47">0.000</text>
+<polygon width="0.762" layer="29">
+<vertex x="13.97" y="45.72"/>
+<vertex x="13.97" y="34.29"/>
+<vertex x="12.7" y="34.29"/>
+<vertex x="12.7" y="29.21"/>
+<vertex x="3.81" y="29.21"/>
+<vertex x="3.81" y="35.56"/>
+<vertex x="3.81" y="43.18"/>
+<vertex x="6.35" y="45.72"/>
+</polygon>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2715,12 +2724,12 @@ design rules under a new name.</description>
 <wire x1="85.5083" y1="30.48" x2="69.85" y2="30.48" width="0.254" layer="1"/>
 <wire x1="86.8583" y1="29.13" x2="85.5083" y2="30.48" width="0.254" layer="1"/>
 <polygon width="0.254" layer="16">
-<vertex x="16.51" y="49.53"/>
-<vertex x="16.51" y="34.29"/>
-<vertex x="13.97" y="34.29"/>
+<vertex x="15.24" y="50.8"/>
+<vertex x="15.24" y="35.56"/>
+<vertex x="13.97" y="35.56"/>
 <vertex x="13.97" y="29.21"/>
-<vertex x="1.27" y="29.21"/>
-<vertex x="1.27" y="49.53"/>
+<vertex x="0" y="29.21"/>
+<vertex x="0" y="50.8"/>
 </polygon>
 <via x="11.43" y="44.45" extent="1-16" drill="0.35" diameter="0.6"/>
 <via x="12.7" y="44.45" extent="1-16" drill="0.35" diameter="0.6"/>
@@ -2804,14 +2813,6 @@ design rules under a new name.</description>
 <via x="6.35" y="30.48" extent="1-16" drill="0.35" diameter="0.6"/>
 <via x="5.08" y="30.48" extent="1-16" drill="0.35" diameter="0.6"/>
 <via x="3.81" y="30.48" extent="1-16" drill="0.35" diameter="0.6"/>
-<polygon width="0.254" layer="16">
-<vertex x="16.51" y="49.53"/>
-<vertex x="16.51" y="34.29"/>
-<vertex x="13.97" y="34.29"/>
-<vertex x="13.97" y="29.21"/>
-<vertex x="1.27" y="29.21"/>
-<vertex x="1.27" y="49.53"/>
-</polygon>
 <wire x1="84.43" y1="35.24" x2="84.42" y2="41.33" width="0" layer="19" extent="1-1"/>
 <wire x1="86.915" y1="27.93" x2="87.77" y2="30.73" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2830,7 +2831,11 @@ design rules under a new name.</description>
 <contactref element="U1" pad="7"/>
 <contactref element="FTDI" pad="4"/>
 <polygon width="0.254" layer="16" orphans="yes">
-<vertex x="0" y="50.8"/>
+<vertex x="17.78" y="50.8"/>
+<vertex x="17.78" y="34.29"/>
+<vertex x="15.24" y="34.29"/>
+<vertex x="15.24" y="27.94"/>
+<vertex x="0" y="27.94"/>
 <vertex x="0" y="-1.27"/>
 <vertex x="69.85" y="-1.27"/>
 <vertex x="69.85" y="50.8"/>

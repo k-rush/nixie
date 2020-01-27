@@ -26710,8 +26710,8 @@ DIN A4, landscape with location and doc. field</description>
 <errors>
 <approved hash="104,1,182.88,246.38,IC1,VBAT,N$1,,,"/>
 <approved hash="103,1,241.3,48.26,S2,NC,+12V,,,"/>
-<approved hash="113,1,167.93,109.262,SV1,,,,,"/>
-<approved hash="113,1,73.9496,256.582,FTDI,,,,,"/>
+<approved hash="113,1,167.899,109.262,SV1,,,,,"/>
+<approved hash="113,1,73.9191,256.582,FTDI,,,,,"/>
 <approved hash="113,2,130.071,89.431,F1,,,,,"/>
 </errors>
 </schematic>

@@ -26016,7 +26016,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="193.04" y1="246.38" x2="182.88" y2="246.38" width="0.1524" layer="91" grouprefs="RTC"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U2" gate="G$1" pin="-_2"/>
 <pinref part="U2" gate="G$1" pin="-_1"/>
@@ -26617,7 +26617,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="48.26" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="99.06" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <label x="55.88" y="111.76" size="1.778" layer="95"/>
@@ -26710,9 +26710,9 @@ DIN A4, landscape with location and doc. field</description>
 <errors>
 <approved hash="104,1,182.88,246.38,IC1,VBAT,N$1,,,"/>
 <approved hash="103,1,241.3,48.26,S2,NC,+12V,,,"/>
-<approved hash="113,1,167.93,109.262,SV1,,,,,"/>
-<approved hash="113,1,73.9496,256.582,FTDI,,,,,"/>
-<approved hash="113,1,283.5,83.8623,SV2,,,,,"/>
+<approved hash="113,1,167.899,109.262,SV1,,,,,"/>
+<approved hash="113,1,73.9191,256.582,FTDI,,,,,"/>
+<approved hash="113,2,130.071,89.431,F1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

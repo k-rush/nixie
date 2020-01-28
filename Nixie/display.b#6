@@ -1749,7 +1749,6 @@ design rules under a new name.</description>
 <element name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA05-1" package3d_urn="urn:adsk.eagle:package:8332/1" value="" x="11.557" y="3.81" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="11.557" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="11.557" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="17.907" y="2.159" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="unknown" x="11.557" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="11.557" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="29" x="11.557" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>

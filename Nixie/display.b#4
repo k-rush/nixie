@@ -67,8 +67,8 @@
 <wire x1="0.127" y1="51.552" x2="0" y2="0" width="0" layer="20"/>
 <hole x="2.54" y="49.149" drill="3.175"/>
 <hole x="2.54" y="2.54" drill="3.175"/>
-<hole x="110.109" y="49.149" drill="3.175"/>
-<hole x="110.109" y="2.413" drill="3.175"/>
+<hole x="110.109" y="49.022" drill="3.175"/>
+<hole x="109.855" y="2.54" drill="3.175"/>
 <text x="106.68" y="2.54" size="1.778" layer="21" font="vector" rot="R180">Kyle Rush 2020</text>
 </plain>
 <libraries>

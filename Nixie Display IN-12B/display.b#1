@@ -70,6 +70,8 @@
 <hole x="110.109" y="49.022" drill="3.175"/>
 <hole x="109.855" y="2.54" drill="3.175"/>
 <text x="106.68" y="2.54" size="1.778" layer="21" font="vector" rot="R180">Kyle Rush 2020</text>
+<hole x="158.877" y="49.022" drill="3.175"/>
+<hole x="158.623" y="2.54" drill="3.175"/>
 </plain>
 <libraries>
 <library name="nixies-us">

@@ -1,7 +1,6 @@
+#include <DS1307RTC.h>
 #include <Wire.h>
 #include <TimeLib.h>
-#include "RotaryEncoder.h"
-#include <DS1307RTC.h>
 
 //Pin connected to ST_CP of 74HC595
 int latchPin = 12;
@@ -9,50 +8,44 @@ int latchPin = 12;
 int clockPin = 8;
 ////Pin connected to DS of 74HC595
 int dataPin = 11;
+int rotaryA = 2;
+int rotaryB = 4;
+
+volatile int master_count = 0; // universal count
+volatile byte INTFLAG1 = 0; // interrupt status flag
 
 //holders for infromation you're going to pass to shifting function
 byte data;
 tmElements_t tm;
-RotaryEncoder encoder(2, 4);
-
+tmElements_t newtm;
+  
 void setup() {
   //set pins to output because they are addressed in the main loop
   
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
   pinMode(latchPin, OUTPUT);
+  pinMode(rotaryA, INPUT);
+  pinMode(rotaryB, INPUT);
   Serial.begin(9600);
   if (!RTC.read(tm)) {
-    Serial.print("Setting rtc...");
-    tm.Hour = 12;
-    tm.Minute = 12;
-    tm.Second = 12;
-    tm.Day = 1;
-    tm.Month = 1;
-    tm.Year = 2020;
+    getTime(__TIME__);
     RTC.write(tm);
   }
+  
+  attachInterrupt(0, flag, RISING);  
 }
 
 void loop() {
-  static int pos = 0;
-  encoder.tick();
-
-  int newPos = encoder.getPosition();
-  
-  if (pos != newPos) {
-    Serial.print(newPos);
-    Serial.println();
-    pos = newPos;
+  if(INTFLAG1)
+  {
+    RTC.write(newtm);
+    INTFLAG1 = 0;
   }
-  
-  if (RTC.read(tm)) {
-      Serial.print("Ok, Time");
-      int digits = tm.Hour * 100 + tm.Minute;
-      Serial.print(digits);
-      shiftOut(dataPin, clockPin, latchPin, digits);
-      delay(300);
-    }
+  RTC.read(tm);
+  int digits = tm.Hour * 100 + tm.Minute;
+  Serial.println(digits);
+  shiftOut(dataPin, clockPin, latchPin, digits);
 }
 
 
@@ -69,13 +62,22 @@ void shiftOut(int myDataPin, int myClockPin, int latchPin, int digits) {
   digitalWrite(myDataPin, 0);
   digitalWrite(myClockPin, 0);
   digitalWrite(latchPin, 0);
-  for(int j = 0; j < 4; j++)
+  int reverseDigits;
+  for(int i = 0; i < 4; i++)
   {
+    reverseDigits *= 10;
     int digit = digits % 10;
     digits = (int)floor(digits / 10);
-    for (i=0; i<10; i++)  {
+    reverseDigits += digit;
+  }
+  
+  for(int j = 0; j < 4; j++)
+  {
+    int digit = reverseDigits % 10;
+    reverseDigits = (int)floor(reverseDigits / 10);
+    for (i=1; i<=10; i++)  {
       digitalWrite(myClockPin, 0);
-      pinState= digit == i;
+      pinState= digit == i%10;
       Serial.print(pinState);
       //Sets the pin to HIGH or LOW depending on pinState
       digitalWrite(myDataPin, pinState);
@@ -88,4 +90,33 @@ void shiftOut(int myDataPin, int myClockPin, int latchPin, int digits) {
   digitalWrite(latchPin, 1);
   Serial.println();
   digitalWrite(myClockPin, 0);
+}
+
+void flag() {
+  newtm = tm;
+  time_t unixTime = makeTime(newtm);
+  if (digitalRead(rotaryA) && !digitalRead(rotaryB)) {
+    Serial.println("CCW");
+    unixTime -= unixTime % 60;
+    unixTime -= 60;
+    breakTime(unixTime, newtm);
+  }
+  if (digitalRead(rotaryA) && digitalRead(rotaryB)) {
+    Serial.println("CW");    
+    unixTime -= unixTime % 60;
+    unixTime += 60;
+    breakTime(unixTime, newtm);
+  }
+  INTFLAG1 = 1;
+}
+
+bool getTime(const char *str)
+{
+  int Hour, Min, Sec;
+
+  if (sscanf(str, "%d:%d:%d", &Hour, &Min, &Sec) != 3) return false;
+  tm.Hour = Hour;
+  tm.Minute = Min;
+  tm.Second = Sec;
+  return true;
 }

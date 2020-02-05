@@ -265,24 +265,12 @@ UsedLibraryUrn="urn:adsk.eagle:library:196"
 UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/NTE74141.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/S5B-XH-A_LF__SN_.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/SamacSys_Parts.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/TE Connectivity AMP Connectors 120591-1.lbr"
 UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Eagle-and-KiCAD-Nixie-Libs-master/nixies-us.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Digikey/Digikey.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Eagle-and-KiCAD-Nixie-Libs-master/mynixies.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Eagle-and-KiCAD-Nixie-Libs-master/nixiemisc.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Digikey/PJ-002A/PJ-002A.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/Digikey/PJ-102A.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/ULN2003D1013TR.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/SN74LVC08PWRPW14-L.lbr"
-UsedLibrary="C:/Users/kyrush/Documents/EAGLE/libraries/SN74HC595PWR.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="2256 1504"
+Screen="1280 720"
 Window="Win_1"

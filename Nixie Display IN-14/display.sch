@@ -92,8 +92,8 @@ Based on the following sources:
 <package name="IN-3">
 <wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.254" layer="21" curve="-177.61227"/>
 <circle x="0" y="0" radius="2.8969" width="0.254" layer="21"/>
-<pad name="A" x="-1.5875" y="0" drill="0.6" shape="octagon"/>
-<pad name="K" x="1.5875" y="0" drill="0.6" shape="octagon"/>
+<pad name="A" x="1.5875" y="0" drill="0.6" shape="octagon"/>
+<pad name="K" x="-1.5875" y="0" drill="0.6" shape="octagon"/>
 <text x="-3.4925" y="-4.7625" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
@@ -7481,7 +7481,6 @@ W = angled&lt;p&gt;
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
-<part name="N5" library="nixies-us" deviceset="IN-3" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
@@ -7516,6 +7515,7 @@ W = angled&lt;p&gt;
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="N5" library="nixies-us" deviceset="IN-3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7545,9 +7545,6 @@ W = angled&lt;p&gt;
 </instance>
 <instance part="P+5" gate="1" x="86.36" y="347.98" smashed="yes">
 <attribute name="VALUE" x="83.82" y="345.44" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="N5" gate="G$1" x="210.82" y="215.9" smashed="yes">
-<attribute name="NAME" x="212.09" y="219.075" size="1.778" layer="95"/>
 </instance>
 <instance part="LED1" gate="G$1" x="213.36" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="217.932" y="166.116" size="1.778" layer="95" rot="R180"/>
@@ -7671,6 +7668,9 @@ W = angled&lt;p&gt;
 <instance part="P+13" gate="VCC" x="68.58" y="58.42" smashed="yes">
 <attribute name="VALUE" x="66.04" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="N5" gate="G$1" x="210.82" y="215.9" smashed="yes">
+<attribute name="NAME" x="212.09" y="219.075" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7693,9 +7693,9 @@ W = angled&lt;p&gt;
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="218.44" y1="162.56" x2="223.52" y2="162.56" width="0.1524" layer="91"/>
 <junction x="223.52" y="162.56"/>
-<pinref part="N5" gate="G$1" pin="K"/>
 <wire x1="223.52" y1="213.36" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
 <junction x="223.52" y="193.04"/>
+<pinref part="N5" gate="G$1" pin="K"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -7880,12 +7880,6 @@ W = angled&lt;p&gt;
 <wire x1="210.82" y1="162.56" x2="203.2" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="203.2" y="193.04"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="N5" gate="G$1" pin="A"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -8329,6 +8323,12 @@ W = angled&lt;p&gt;
 <pinref part="U5" gate="A" pin="DRAIN0"/>
 <wire x1="129.54" y1="83.82" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="N5" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

@@ -1528,45 +1528,6 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="HU2032LF">
-<description>&lt;b&gt;HU2032-LF-3&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="0.9" diameter="1.4"/>
-<pad name="2" x="0" y="-2.54" drill="0.9" diameter="1.4"/>
-<pad name="3" x="26.9" y="-1.27" drill="0.9" diameter="1.4"/>
-<text x="13.45" y="-1.27" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="13.45" y="-1.27" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.8" y1="9.73" x2="28.7" y2="9.73" width="0.1" layer="51"/>
-<wire x1="28.7" y1="9.73" x2="28.7" y2="-12.27" width="0.1" layer="51"/>
-<wire x1="28.7" y1="-12.27" x2="-1.8" y2="-12.27" width="0.1" layer="51"/>
-<wire x1="-1.8" y1="-12.27" x2="-1.8" y2="9.73" width="0.1" layer="51"/>
-<wire x1="3.45" y1="-1.27" x2="3.45" y2="-1.27" width="0.2" layer="51"/>
-<wire x1="3.45" y1="-1.27" x2="23.45" y2="-1.27" width="0.2" layer="51" curve="180"/>
-<wire x1="23.45" y1="-1.27" x2="23.45" y2="-1.27" width="0.2" layer="51"/>
-<wire x1="23.45" y1="-1.27" x2="3.45" y2="-1.27" width="0.2" layer="51" curve="180"/>
-<wire x1="-0.8" y1="2.23" x2="-0.8" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="27.7" y1="2.23" x2="27.7" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="6.45" y1="6.78" x2="20.45" y2="6.78" width="0.2" layer="51"/>
-<wire x1="6.45" y1="-9.32" x2="20.45" y2="-9.32" width="0.2" layer="51"/>
-<wire x1="6.45" y1="6.78" x2="3.45" y2="2.23" width="0.2" layer="51"/>
-<wire x1="6.45" y1="-9.32" x2="3.45" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="20.45" y1="-9.32" x2="23.45" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="20.45" y1="6.78" x2="23.45" y2="2.23" width="0.2" layer="51"/>
-<wire x1="3.45" y1="2.23" x2="-0.8" y2="2.23" width="0.2" layer="51"/>
-<wire x1="-0.8" y1="-4.77" x2="3.45" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="27.7" y1="-4.77" x2="23.45" y2="-4.77" width="0.2" layer="51"/>
-<wire x1="27.7" y1="2.23" x2="23.45" y2="2.23" width="0.2" layer="51"/>
-<wire x1="-0.8" y1="2.23" x2="3.45" y2="2.23" width="0.1" layer="21"/>
-<wire x1="3.45" y1="2.23" x2="6.45" y2="6.78" width="0.1" layer="21"/>
-<wire x1="6.45" y1="6.78" x2="20.45" y2="6.78" width="0.1" layer="21"/>
-<wire x1="20.45" y1="6.78" x2="23.45" y2="2.23" width="0.1" layer="21"/>
-<wire x1="23.45" y1="2.23" x2="27.7" y2="2.23" width="0.1" layer="21"/>
-<wire x1="-0.8" y1="-4.77" x2="3.45" y2="-4.77" width="0.1" layer="21"/>
-<wire x1="3.45" y1="-4.77" x2="6.45" y2="-9.32" width="0.1" layer="21"/>
-<wire x1="6.45" y1="-9.32" x2="20.45" y2="-9.32" width="0.1" layer="21"/>
-<wire x1="20.45" y1="-9.32" x2="23.45" y2="-4.77" width="0.1" layer="21"/>
-<wire x1="23.45" y1="-4.77" x2="27.7" y2="-4.77" width="0.1" layer="21"/>
-</package>
 <package name="A12AV">
 <description>&lt;b&gt;A12AV&lt;/b&gt;&lt;br&gt;
 </description>
@@ -2143,6 +2104,40 @@ grid 2.54 mm</description>
 </package>
 </packages>
 </library>
+<library name="TE Connectivity AMP Connectors 120591-1">
+<packages>
+<package name="CONN3_120591-1">
+<pad name="3" x="-13.462" y="-1.27" drill="0.9652" diameter="1.4732"/>
+<pad name="1" x="-13.462" y="1.27" drill="0.9652" diameter="1.4732"/>
+<pad name="2" x="13.462" y="0" drill="0.9652" diameter="1.4732"/>
+<wire x1="-4.9276" y1="-9.4996" x2="7.4168" y2="-9.4996" width="0.1524" layer="51"/>
+<wire x1="13.6652" y1="-2.159" x2="13.6652" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="7.4168" y1="9.4996" x2="-4.9276" y2="9.4996" width="0.1524" layer="51"/>
+<wire x1="-13.6652" y1="2.159" x2="-13.6652" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="-13.6652" y1="2.159" x2="-9.8552" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-13.6652" y1="-2.159" x2="-9.8552" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="13.6652" y1="2.159" x2="12.3444" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="13.6652" y1="-2.159" x2="12.3444" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="-11.049" y1="1.27" x2="-11.811" y2="1.27" width="0.508" layer="51" curve="-180"/>
+<wire x1="-11.811" y1="1.27" x2="-11.049" y2="1.27" width="0.508" layer="51" curve="-180"/>
+<wire x1="-4.9276" y1="-9.4996" x2="-4.9276" y2="9.4996" width="0.1524" layer="51" curve="-114"/>
+<wire x1="7.4168" y1="9.4996" x2="7.4168" y2="-9.4996" width="0.1524" layer="51" curve="-114"/>
+<wire x1="-5.0038" y1="-9.6012" x2="7.493" y2="-9.6012" width="0.1524" layer="21"/>
+<wire x1="12.4714" y1="-2.286" x2="13.7668" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="7.493" y1="9.6012" x2="-5.0038" y2="9.6012" width="0.1524" layer="21"/>
+<wire x1="-9.9822" y1="2.286" x2="-13.7668" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="-13.7668" y1="-2.286" x2="-9.9822" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="13.7668" y1="2.286" x2="12.4714" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="-15.3162" y1="1.27" x2="-16.0782" y2="1.27" width="0.508" layer="21" curve="-180"/>
+<wire x1="-16.0782" y1="1.27" x2="-15.3162" y2="1.27" width="0.508" layer="21" curve="-180"/>
+<wire x1="7.493" y1="9.6012" x2="12.6238" y2="1.397" width="0.1524" layer="21" curve="-50"/>
+<wire x1="-5.0038" y1="-9.6012" x2="-5.0038" y2="9.6012" width="0.1524" layer="21" curve="-114"/>
+<wire x1="12.6238" y1="-1.397" x2="7.493" y2="-9.6012" width="0.1524" layer="21" curve="-50"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2426,15 +2421,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-09136" x="18.542" y="50.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="32.512" y="7.62" size="0.6096" layer="21" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 </element>
-<element name="U2" library="SamacSys_Parts" package="HU2032LF" value="HU2032-LF" x="40.132" y="38.1" smashed="yes">
-<attribute name="DESCRIPTION" value="RENATA - HU2032-LF - HOLDER, BATTERY, THT, CR2032" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="5.35mm" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="RENATA" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="HU2032-LF" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="614-HU2032-LF" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=614-HU2032-LF" x="82.042" y="25.4" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="53.582" y="36.83" size="1.27" layer="21" align="center"/>
-</element>
 <element name="Y2" library="SparkFun-Clocks" package="CRYSTAL-PTH-2X6-CYL" value="32.768kHz" x="49.022" y="22.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="53.594" y="24.13" size="0.6096" layer="21" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="XTAL-10112" x="49.022" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2562,18 +2548,33 @@ design rules under a new name.</description>
 <attribute name="PART_REV" value="1.03" x="8.382" y="12.954" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STANDARD" value="Manufacturer recommendations" x="8.382" y="12.954" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="U3" library="TE Connectivity AMP Connectors 120591-1" package="CONN3_120591-1" value="120591-1" x="-4.318" y="-92.964" smashed="yes">
+<attribute name="BUILT_BY" value="EMA_UL_Team" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2016 Accelerated Designs. All rights reserved" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="TOP LOAD BATTERY" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="120591-1" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-7.5946" y="-93.599" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="PITCH_MM_" value="-" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="POSITIONS" value="2" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="PRODUCT" value="Battery Holders" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="ROWS-CONFIG" value="-" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="TE_PART_NUMBER" value="120591-1" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="Coin Cell" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.0452" y="-93.599" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="VENDOR" value="TE Connectivity" x="-4.318" y="-92.964" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="IC1" pad="3"/>
-<contactref element="U2" pad="3"/>
-<wire x1="67.032" y1="36.83" x2="55.602" y2="25.4" width="0.254" layer="1"/>
 <wire x1="41.402" y1="25.4" x2="38.862" y2="22.86" width="0.254" layer="1"/>
 <wire x1="55.602" y1="25.4" x2="41.402" y2="25.4" width="0.254" layer="1"/>
+<contactref element="U3" pad="3"/>
+<contactref element="U3" pad="2"/>
+<wire x1="9.144" y1="-92.964" x2="-17.78" y2="-94.234" width="0" layer="19" extent="1-1"/>
+<wire x1="38.862" y1="22.86" x2="9.144" y2="-92.964" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="1">
-<contactref element="U2" pad="2"/>
-<contactref element="U2" pad="1"/>
 <contactref element="IC1" pad="4"/>
 <contactref element="C2" pad="-"/>
 <contactref element="C1" pad="-"/>
@@ -2763,7 +2764,9 @@ design rules under a new name.</description>
 <contactref element="S2" pad="5"/>
 <contactref element="J1" pad="3"/>
 <contactref element="J1" pad="2"/>
+<contactref element="U3" pad="1"/>
 <wire x1="76.048" y1="43.114" x2="76.038" y2="42.854" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.78" y1="-91.694" x2="6.35" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="8"/>

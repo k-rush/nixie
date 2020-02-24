@@ -11,6 +11,8 @@ int dataPin = 11;
 int rotaryA = 2;
 int rotaryB = 4;
 
+int shdnPin = 3;
+
 volatile int master_count = 0; // universal count
 volatile byte INTFLAG1 = 0; // interrupt status flag
 
@@ -33,7 +35,9 @@ void setup() {
     RTC.write(tm);
   }
   
-  attachInterrupt(0, flag, RISING);  
+  attachInterrupt(0, flag, RISING);
+  pinMode(shdnPin, OUTPUT);
+  digitalWrite(shdnPin, LOW);
 }
 
 void loop() {

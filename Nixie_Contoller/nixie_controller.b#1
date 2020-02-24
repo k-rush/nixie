@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -154,7 +154,7 @@
 <hole x="2.54" y="2.54" drill="3.175"/>
 <hole x="109.728" y="49.022" drill="3.175"/>
 <hole x="109.728" y="2.54" drill="3.175"/>
-<text x="111.252" y="15.24" size="1.778" layer="21" rot="R90">kyle rush 2019</text>
+<text x="111.252" y="15.24" size="1.778" layer="21" rot="R90">kyle rush 2020</text>
 <wire x1="-0.0254" y1="-63.5" x2="-0.0254" y2="-72.0852" width="0.2032" layer="47"/>
 <wire x1="-0.0254" y1="-72.0852" x2="-0.0254" y2="-73.66" width="0.2032" layer="47"/>
 <wire x1="51.4604" y1="-63.5" x2="51.4604" y2="-72.0852" width="0.2032" layer="47"/>
